@@ -1,6 +1,7 @@
 app = "vspirit-dispatch-production"
 kill_signal = "SIGTERM"
 kill_timeout = 5
+swap_size_mb = 256
 processes = []
 
 [env]
