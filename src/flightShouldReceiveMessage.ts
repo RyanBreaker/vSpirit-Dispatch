@@ -24,7 +24,7 @@ export const flightShouldReceiveMessage = (
       return false
     }
 
-    if (['ROA', 'TWA', 'PSA'].includes(callsign.substring(0, 3))) {
+    if (['ROA', 'TWA', 'PSA', 'AWE', 'ACL', 'USA'].includes(callsign.substring(0, 3))) {
       log.debug(
         `Non AAL: Dropping message for ${username} on flight ${callsign}`
       )
